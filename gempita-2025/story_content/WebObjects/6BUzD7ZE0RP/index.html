@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Full Screen Google Form</title>
+<style>
+/* 1. Atur html dan body agar mengambil tinggi penuh viewport */
+html, body {
+    margin: 0;       /* Menghilangkan margin bawaan */
+    padding: 0;      /* Menghilangkan padding bawaan */
+    height: 100%;    /* Kunci: Membuat tinggi 100% dari jendela browser */
+    overflow: hidden; /* Opsional: Menghilangkan scrollbar utama */
+}
+
+/* 2. Atur iframe agar mengambil 100% dari body */
+iframe {
+    display: block;  /* Memastikan iframe berperilaku sebagai blok */
+    width: 100%;     /* Lebar penuh */
+    height: 100%;    /* Tinggi penuh */
+    border: none;    /* Menghilangkan border bawaan iframe */
+}
+</style>
+</head>
+<body>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSca94MgFebKzbdoTq9LGD3B_r4K7Su51U2G_bEFK2RrpmDK8Q/viewform?embedded=true">Loading…</iframe>
+</body>
+</html>
